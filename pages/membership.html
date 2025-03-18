@@ -6,24 +6,104 @@
     <title>membership</title>
     <style>
       .info {
-        color: silver;
+        color: rgb(160, 160, 170);
       }
       table,
       th,
       td {
         border: 1px solid black;
+        text-align: center;
       }
       table {
         margin: 20px auto;
-        background-color: rgb(236, 236, 236);
+        background-color: rgb(245, 245, 245);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
       }
       a {
         text-decoration-line: none;
         color: sienna;
       }
       td {
-        padding: 10px;
+        padding: 12px;
+        font-weight: bold;
+        position: relative;
       }
+
+      /* 금속 느낌의 반짝이는 효과 */
+      @keyframes shine {
+        0% {
+          background-position: -100px;
+        }
+        100% {
+          background-position: 200px;
+        }
+      }
+
+      /* 등급 제목 스타일 */
+      th:nth-child(1) {
+        background: linear-gradient(45deg, #8b5a2b, #ad7d55);
+        color: white;
+      } /* 브론즈 */
+      th:nth-child(2) {
+        background: linear-gradient(45deg, #6e7c87, #a5a5a5);
+        color: white;
+      } /* 실버 */
+      th:nth-child(3) {
+        background: linear-gradient(45deg, #b8860b, #e6c200);
+        color: white;
+      } /* 골드 */
+      th:nth-child(4) {
+        background: linear-gradient(45deg, #708090, #b0c4de);
+        color: white;
+      } /* 플래티넘 */
+
+      /* 등급 내용 스타일 (메탈릭 빛 반사 효과) */
+      td:nth-child(1) {
+        background: linear-gradient(
+          135deg,
+          #c08050 25%,
+          #dfa66a 50%,
+          #c08050 75%
+        );
+        color: white;
+        background-size: 200% 200%;
+        animation: shine 3s linear infinite;
+      } /* 브론즈 */
+      td:nth-child(2) {
+        background: linear-gradient(
+          135deg,
+          #b0b0b0 25%,
+          #d4d4d4 50%,
+          #b0b0b0 75%
+        );
+        color: white;
+        background-size: 200% 200%;
+        animation: shine 3s linear infinite;
+      } /* 실버 */
+      td:nth-child(3) {
+        background: linear-gradient(
+          135deg,
+          #e6c200 25%,
+          #ffea70 50%,
+          #e6c200 75%
+        );
+        color: black;
+        background-size: 200% 200%;
+        animation: shine 3s linear infinite;
+      } /* 골드 */
+      td:nth-child(4) {
+        background: linear-gradient(
+          135deg,
+          #b0c4de 25%,
+          #dbeaff 50%,
+          #b0c4de 75%
+        );
+        color: black;
+        background-size: 200% 200%;
+        animation: shine 3s linear infinite;
+      } /* 플래티넘 */
     </style>
   </head>
   <body>
@@ -33,7 +113,7 @@
       KB IT 레스토랑은 자체적으로 멤버십(Membership)이란 회원제도를 운영하고
       있습니다.
     </p>
-    <p class="info">실버 등급부터 하위 등급의 해택은 기본적으로 제공합니다.</p>
+    <p class="info">실버 등급부터 하위 등급의 혜택은 기본적으로 제공합니다.</p>
     <table>
       <tbody>
         <tr>
