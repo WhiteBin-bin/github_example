@@ -1,19 +1,22 @@
 # 협업
-4~5인 1조
-### 조장 : 백현빈 (github.com 원격 저장소를 팀원 초대)
+### 4~5인 1조
+### 조장
+백현빈 (github.com 원격 저장소를 팀원 초대)
 ### 구조
 index.html
-- **각자 개발한 페이지로 이동하는 링크** 
+- 각자 개발한 페이지로 이동하는 링크 
 - 각자 하나의 페이지 개발
-- pages/ (예시)
-   - cart.html - 팀원 1
-   - user_profile.html - 팀원 2
-   - sale.html - 팀원 3
-   - .... 팀원 4
-   - css js
+- 주제 : 레스토랑 페이지
+- pages
+   - index.html - 다하고 나서 결정
+   - How.html - 백현빈
+   - Menu.html - 하경한
+   - membership.html - 이해인
+   - information.html - 조경환
+   - css js - 다하고 나서 결정
 ### 요구사항
 - 주제 정하기
--기능 정의
+- 기능 정의
   -> 이슈로 만들기
 - 각자 역할 분담 -> 이슈에 담당자를 할당
 - 각자 페이지를 개발
